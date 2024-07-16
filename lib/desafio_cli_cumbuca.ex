@@ -1,14 +1,35 @@
 defmodule DesafioCliCumbuca do
-  @moduledoc """
-  Este template tem o objetivo de servir como ponto de partida para a implementação
-  de desafios de contratação da Cumbuca que envolvam implementar uma interface de
-  linha de comando em Elixir.
+  @usage_message """
+  Ferramenta de linha de comando que recebe uma lista de reis e rainhas de Cumbúquia
+  e retorna os mesmos nomes com a devida numeração romana.
+
+  Uso:
+  1. Execute o binário.
+  2. Escolha entre ler a lista de nomes de um arquivo ou inserir manualmente.
+  3. Se escolher o arquivo, pode inserir o caminho do arquivo ou pressionar Enter para usar o padrão 'nomes.txt'.
+  4. Se escolher manual, insira uma lista de nomes, um por linha.
+  5. Insira uma linha em branco para finalizar a lista.
+  6. A ferramenta irá retornar os nomes numerados conforme necessário.
+
+  Exemplo:
+  Entrada:
+  Eduardo
+  Maria
+  Daniel
+  Eduardo
+
+  Saída:
+  Eduardo I
+  Maria I
+  Daniel I
+  Eduardo II
   """
 
   def main(args \\ []) do
+    IO.puts @usage_message
     case args do
       ["--help" | _] ->
-        IO.puts @moduledoc
+        :ok
       _ ->
         start()
     end
@@ -119,5 +140,4 @@ defmodule DesafioCliCumbuca do
     end
   end
 end
-
 
