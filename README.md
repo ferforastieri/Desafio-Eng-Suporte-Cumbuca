@@ -13,9 +13,9 @@ Após a lista ser finalizada, a ferramenta irá repetir os nomes inseridos, por�
 Primeiro, será necessário instalar o Elixir em versão igual ou superior a 1.16. Com o Elixir instalado, você terá a ferramenta de build `mix`.
 
 Para verificar se o Elixir está instalado corretamente, você pode usar o comando:
-
+```
 elixir -v
-
+```
 ## Compilando o Projeto
 Para compilar o projeto e gerar o binário executável, use o comando:
 ```
