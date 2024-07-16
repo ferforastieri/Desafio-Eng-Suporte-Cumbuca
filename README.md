@@ -1,7 +1,13 @@
-# Desafio CLI Cumbuca
+# Desafio CLI Reis e Rainhas Cumbuca
 
-Este projeto tem o objetivo de servir como ponto de partida para a implementação de desafios de contratação da Cumbuca que envolvam implementar uma interface de linha de comando em Elixir.
+Este projeto tem é um desafio proposto pela Combuca, o objetivo é implementar uma interface de linha de comando em Elixir. Com base no seguinte problema: 
+```
+A ferramenta de linha de comando que você irá desenvolver deve receber a lista dos reis e rainhas de Cumbúquia em ordem e retornar os mesmos nomes, cada um com sua devida numeração.
 
+Ao iniciar o binário, ele deve primeiro exibir uma breve explicação de seu uso. Ele irá então esperar o usuário inserir uma lista de nomes. Os nomes serão inseridos um por linha, e a lista será considerada terminada quando for lida uma linha em branco.
+
+Após a lista ser finalizada, a ferramenta irá repetir os nomes inseridos, porém, os nomes serão acrescidos de um número romano conforme necessário.
+```
 ## Pré-requisitos
 
 Primeiro, será necessário instalar o Elixir em versão igual ou superior a 1.16. Com o Elixir instalado, você terá a ferramenta de build `mix`.
@@ -29,7 +35,7 @@ No Windows:
 escript desafio_cli_cumbuca
 ```
 
-##Uso da Ferramenta
+## Uso da Ferramenta
 Ao executar o binário, você verá o seguinte menu:
 
 ```
@@ -40,13 +46,6 @@ Escolha uma opção:
 3. Inserir nomes manualmente
 4. Sair
 ```
-
-## Opções do Menu
-Ler nomes de um arquivo padrão ('nomes.txt'): Lê uma lista de nomes do arquivo padrão 'nomes.txt'.
-Ler nomes de um arquivo específico: Lê uma lista de nomes de um arquivo específico cujo caminho é fornecido pelo usuário.
-Inserir nomes manualmente: Permite ao usuário inserir uma lista de nomes manualmente, um por linha.
-Sair: Sai do programa.
-
 ## Exemplos
 
 Entrada
@@ -63,12 +62,7 @@ Maria I
 Daniel I
 Eduardo II
 ```
-## Funções Principais
-main/1: Ponto de entrada principal para a CLI. Aceita argumentos de linha de comando.
-enumerate_names/2: Adiciona numerais romanos a uma lista de nomes.
-to_roman/1: Converte números para numerais romanos.
-
-##Estrutura do Projeto
+## Estrutura do Projeto
 ```
 desafio_cli_cumbuca/
 ├── lib/
@@ -87,9 +81,11 @@ mix test
 Os testes estão localizados no diretório test e cobrem as funções principais do projeto.
 
 ## Contato
-Para mais informações, entre em contato com a equipe de desenvolvimento da Cumbuca.
+Para mais informações, entre em contato comigo, todas as minhas redes estao disponiveis!
 
-Este README fornece uma visão geral completa sobre como configurar, compilar, executar e te
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para sugerir novas funcionalidades, melhorias no código, correções de bugs, etc.
 
+## Licença
+Este projeto é licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 
