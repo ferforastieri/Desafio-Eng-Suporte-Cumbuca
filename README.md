@@ -8,34 +8,38 @@ Primeiro, será necessário instalar o Elixir em versão igual ou superior a 1.1
 
 Para verificar se o Elixir está instalado corretamente, você pode usar o comando:
 
-```sh
 elixir -v
 
 ## Compilando o Projeto
 Para compilar o projeto e gerar o binário executável, use o comando:
+```
 mix escript.build
-
+```
 Isso irá gerar um binário com o mesmo nome do projeto na pasta atual.
 
 ## Executando o Binário
 Para executar o binário gerado, utilize um dos seguintes comandos:
 
 No Linux/Mac:
+```
 ./desafio_cli_cumbuca
-
+```
 No Windows:
+```
 escript desafio_cli_cumbuca
+```
 
 ##Uso da Ferramenta
 Ao executar o binário, você verá o seguinte menu:
 
-
+```
 Bem-vindo à Ferramenta de Realeza!
 Escolha uma opção:
 1. Ler nomes de um arquivo padrão ('nomes.txt')
 2. Ler nomes de um arquivo específico
 3. Inserir nomes manualmente
 4. Sair
+```
 
 ## Opções do Menu
 Ler nomes de um arquivo padrão ('nomes.txt'): Lê uma lista de nomes do arquivo padrão 'nomes.txt'.
@@ -46,26 +50,26 @@ Sair: Sai do programa.
 ## Exemplos
 
 Entrada
-
+```
 Eduardo
 Maria
 Daniel
 Eduardo
-
+```
 Saída
-
+```
 Eduardo I
 Maria I
 Daniel I
 Eduardo II
-
+```
 ## Funções Principais
 main/1: Ponto de entrada principal para a CLI. Aceita argumentos de linha de comando.
 enumerate_names/2: Adiciona numerais romanos a uma lista de nomes.
 to_roman/1: Converte números para numerais romanos.
 
 ##Estrutura do Projeto
-
+```
 desafio_cli_cumbuca/
 ├── lib/
 │   └── desafio_cli_cumbuca.ex
@@ -73,13 +77,13 @@ desafio_cli_cumbuca/
 │   └── desafio_cli_cumbuca_test.exs
 ├── mix.exs
 └── README.md
-
+```
 
 ## Testes
 Para rodar os testes, utilize o comando:
-
+```
 mix test
-
+```
 Os testes estão localizados no diretório test e cobrem as funções principais do projeto.
 
 ## Contato
